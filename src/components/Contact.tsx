@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, ArrowRight, Phone } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone } from 'lucide-react';
 export function Contact() {
   return (
     <section
@@ -8,7 +8,7 @@ export function Contact() {
       className="py-24 md:py-32 bg-dark text-cream border-t border-charcoal/50">
       
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 gap-16">
           {/* Contact Info */}
           <motion.div
             initial={{
@@ -77,82 +77,6 @@ export function Contact() {
                 <span className="text-lg">Pkk2001</span>
               </a>
             </div>
-          </motion.div>
-
-          {/* Contact Form */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: 30
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              duration: 0.8,
-              delay: 0.2
-            }}>
-            
-            <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
-              <div className="relative">
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full bg-transparent border-b border-charcoal py-4 text-cream focus:outline-none focus:border-gold transition-colors peer placeholder-transparent"
-                  placeholder="Name" />
-                
-                <label
-                  htmlFor="name"
-                  className="absolute left-0 top-4 text-sage text-lg transition-all peer-focus:-top-3 peer-focus:text-xs peer-focus:text-gold peer-valid:-top-3 peer-valid:text-xs">
-                  
-                  Your Name
-                </label>
-              </div>
-
-              <div className="relative">
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full bg-transparent border-b border-charcoal py-4 text-cream focus:outline-none focus:border-gold transition-colors peer placeholder-transparent"
-                  placeholder="Email" />
-                
-                <label
-                  htmlFor="email"
-                  className="absolute left-0 top-4 text-sage text-lg transition-all peer-focus:-top-3 peer-focus:text-xs peer-focus:text-gold peer-valid:-top-3 peer-valid:text-xs">
-                  
-                  Email Address
-                </label>
-              </div>
-
-              <div className="relative">
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full bg-transparent border-b border-charcoal py-4 text-cream focus:outline-none focus:border-gold transition-colors peer placeholder-transparent resize-none"
-                  placeholder="Message">
-                </textarea>
-                <label
-                  htmlFor="message"
-                  className="absolute left-0 top-4 text-sage text-lg transition-all peer-focus:-top-3 peer-focus:text-xs peer-focus:text-gold peer-valid:-top-3 peer-valid:text-xs">
-                  
-                  Your Message
-                </label>
-              </div>
-
-              <button
-                type="submit"
-                className="group relative inline-flex items-center justify-center px-8 py-4 bg-gold text-dark font-medium overflow-hidden transition-all hover:bg-cream w-full sm:w-auto">
-                
-                <span className="relative z-10 flex items-center">
-                  Send Message
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </button>
-            </form>
           </motion.div>
         </div>
       </div>
