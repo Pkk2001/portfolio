@@ -55,7 +55,7 @@ export function Contact() {
                 <span className="text-lg">+94 768475041</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/prabhath-koralage"
+                href="https://www.linkedin.com/in/prabhath-koralage-6a5411354/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center text-sage hover:text-gold transition-colors group">
