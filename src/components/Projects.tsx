@@ -4,6 +4,33 @@ import { Github } from 'lucide-react';
 export function Projects() {
   const projects = [
   {
+    title: 'AI File Manager',
+    description:
+    'An intelligent desktop application for high-performance file indexing, deduplication, and natural language file search. Built with a .NET 9 C# backend featuring a producer-consumer ETL pipeline and SQLite storage, integrated with a local Python AI engine powered by Ollama LLM for semantic query processing.',
+    tags: [
+    '.NET 9',
+    'C#',
+    'Python',
+    'Ollama',
+    'SQLite',
+    'Desktop App'],
+
+    github: 'https://github.com/Pkk2001/AI-File-Manager'
+  },
+  {
+    title: 'Student Health Risk Prediction',
+    description:
+    'A machine learning project designed to evaluate and predict health risk levels among students using behavioral, lifestyle, and academic metrics. Features comprehensive exploratory data analysis (EDA), data preprocessing, feature engineering, and predictive classification models to identify at-risk students.',
+    tags: [
+    'Python',
+    'Machine Learning',
+    'Classification',
+    'Scikit-Learn',
+    'Data Analysis'],
+
+    github: 'https://github.com/Pkk2001/ML-Predicting-Student-Health-Risk'
+  },
+  {
     title: 'GadgetHub',
     description:
     'A microservices-based e-commerce platform that manages quotation requests across multiple distributor APIs. Features a central hub API distributing customer requests to external services via webhook integration, with a React frontend for product catalog management and real-time quotation tracking.',
